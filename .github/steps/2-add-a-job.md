@@ -1,24 +1,25 @@
-## Step 2: Add a job to your workflow file
+## Paso 2: Agrega un trabajo a tu archivo de flujo de trabajo
 
-_Nice work! :tada: You added a workflow file!_
+_¡Buen trabajo! :tada: ¡Has agregado un archivo de flujo de trabajo!_
 
-Here's what the entries in the `welcome.yml` file, on the `welcome-workflow` branch, mean:
+Aquí está lo que significan las entradas en el archivo `welcome.yml`, en la rama `welcome-workflow`:
 
-- `name: Post welcome comment` gives your workflow a name. This name will appear in the Actions tab of your repository.
-- `on: pull_request: types: [opened]` indicates that your workflow will execute whenever someone opens a pull request in your repository.
-- `permissions` assigns the workflow permissions to operate on the repository
-- `pull-requests: write` gives the workflow permission to write to pull requests. This is needed to create the welcome comment.
+- `name: Post welcome comment` le da a tu flujo de trabajo un nombre. Este nombre aparecerá en la pestaña Actions de tu repositorio.
+- `on: pull_request: types: [opened]` indica que tu flujo de trabajo se ejecutará cada vez que alguien abra una solicitud de extracción en tu repositorio.
+- `permissions` asigna permisos al flujo de trabajo para operar en el repositorio.
+- `pull-requests: write` le da al flujo de trabajo permiso para escribir en las solicitudes de extracción. Esto es necesario para crear el comentario de bienvenida.
 
-Next, we need to specify jobs to run.
+A continuación, necesitamos especificar los trabajos a ejecutar.
 
-**What is a _job_?**: A job is a set of steps in a workflow that execute on the same runner (a runner is a server that runs your workflows when triggered). Workflows have jobs, and jobs have steps. Steps are executed in order and are dependent on each other. You'll add steps to your workflow later in the course. To read more about jobs, see "[Jobs](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#jobs)".
+**¿Qué es un _trabajo_?**: Un trabajo es un conjunto de pasos en un flujo de trabajo que se ejecutan en el mismo runner (un runner es un servidor que ejecuta tus flujos de trabajo cuando se activan). Los flujos de trabajo tienen trabajos, y los trabajos tienen pasos. Los pasos se ejecutan en orden y dependen entre sí. Más adelante en el curso, agregarás pasos a tu flujo de trabajo. Para obtener más información sobre los trabajos, consulta "[Trabajos](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#jobs)".
 
-In the following activity, you'll add a "build" job to your workflow. You'll specify `ubuntu-latest` as the fastest, and cheapest, job runner available. If you want to read more about why we'll use that runner, see the code explanation for the line `runs-on: ubuntu-latest` in the "[Understanding the workflow file](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#understanding-the-workflow-file)" article.
+En la siguiente actividad, agregarás un trabajo de "build" a tu flujo de trabajo. Especificarás `ubuntu-latest` como el runner de trabajo más rápido y económico disponible. Si deseas leer más sobre por qué usaremos ese runner, consulta la explicación de código para la línea `runs-on: ubuntu-latest` en el artículo "[Understanding the workflow file](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#understanding-the-workflow-file)".
 
-### :keyboard: Activity: Add a job to your workflow file
 
-1. In a separate browser tab, make sure you are on the `welcome-workflow` branch and open your `.github/workflows/welcome.yml` file.
-1. Edit the file and update its contents to:
+### :keyboard: Actividad: Agregar un trabajo a tu archivo de flujo de trabajo
+
+1. En una pestaña de navegador separada, asegúrate de estar en la rama `welcome-workflow` y abre tu archivo `.github/workflows/welcome.yml`.
+2. Edita el archivo y actualiza su contenido a:
 
    ```yaml copy
    name: Post welcome comment
@@ -35,4 +36,8 @@ In the following activity, you'll add a "build" job to your workflow. You'll spe
 
 1. Click **Commit changes** in the top right of the workflow editor.
 1. Type a commit message and commit your changes directly to the `welcome-workflow` branch.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace this content with instructions for the next step.
+1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace the contents of this README file with instructions for the next step.
+
+1. Haz clic en **Commit changes** en la parte superior derecha del editor de flujo de trabajo.
+2. Escribe un mensaje de confirmación y confirma tus cambios directamente en la rama `welcome-workflow`.
+3. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.

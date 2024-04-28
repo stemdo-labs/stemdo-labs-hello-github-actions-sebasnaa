@@ -1,13 +1,13 @@
-## Step 4: Merge your workflow file
+## Paso 4: Fusiona tu archivo de flujo de trabajo
 
-_You're now able to write and run an Actions workflow! :sparkles:_
+_¡Ahora puedes escribir y ejecutar un flujo de trabajo de Actions! :sparkles:_
 
-Merge your changes so the action will be a part of the `main` branch.
+Fusiona tus cambios para que la acción sea parte de la rama `stemdo`.
 
-### :keyboard: Activity: Merge your workflow file
+### :keyboard: Actividad: Fusiona tu archivo de flujo de trabajo
 
-1. In your repo, click on the **Pull requests** tab.
-1. Click on the pull request you created in step 1.
-1. Click **Merge pull request**, then click **Confirm merge**.
-1. Optionally, click **Delete branch** to delete your `welcome-workflow` branch.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace this content with instructions for the next step.
+1. En tu repositorio, haz clic en la pestaña **Pull requests**.
+2. Haz clic en la solicitud de extracción que creaste en el paso 1.
+3. Haz clic en **Merge pull request**, luego haz clic en **Confirm merge**.
+4. Opcionalmente, haz clic en **Delete branch** para eliminar tu rama `welcome-workflow`.
+5. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.

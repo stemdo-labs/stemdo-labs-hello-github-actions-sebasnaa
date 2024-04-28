@@ -2,45 +2,56 @@
 
 # Hello GitHub Actions
 
-_Create and run a GitHub Actions workflow._
+_Crea y ejecuta un flujo de trabajo de GitHub Actions._
 
 </header>
 
-## Welcome
+## Bienvenido
 
-Automation is key for streamlining your work processes, and [GitHub Actions](https://docs.github.com/actions) is the best way to supercharge your workflow.
+La automatización es clave para optimizar tus procesos de trabajo, y [GitHub Actions](https://docs.github.com/actions) es la mejor manera de potenciar tu flujo de trabajo.
 
-- **Who is this for**: Developers, DevOps engineers, students, managers, teams, GitHub users.
-- **What you'll learn**: How to create workflow files, trigger workflows, and find workflow logs.
-- **What you'll build**: An Actions workflow that will check emoji shortcode references in Markdown files.
-- **Prerequisites**: In this course you will work with issues and pull requests, as well as edit files. We recommend you take the [Introduction to GitHub](https://github.com/skills/introduction-to-github) course first.
-- **How long**: This course can be finished in less than two hours.
+- **¿Para quién es esto?**: Desarrolladores, ingenieros DevOps, estudiantes, gerentes, equipos, usuarios de GitHub.
+- **Lo que aprenderás**: Cómo crear archivos de flujo de trabajo, activar flujos de trabajo y encontrar registros de flujo de trabajo.
+- **Qué construirás**: Un flujo de trabajo de Actions que verificará las referencias de códigos cortos de emoji en archivos Markdown.
+- **Requisitos previos**: En este curso trabajarás con problemas y solicitudes de extracción, así como editar archivos. Recomendamos que primero hagas el curso de [Introducción a GitHub](https://github.com/skills/introduction-to-github).
+- **Duración**: Este curso se puede completar en menos de dos horas.
 
-In this course, you will:
+En este curso, aprenderás:
 
-1. Create a workflow
-2. Add a job
-3. Add a run step
-4. Merge your pull request
-5. See effect of the workflow
+1. Crear un flujo de trabajo
+2. Agregar un trabajo
+3. Agregar un paso de ejecución
+4. Fusionar tu solicitud de extracción
+5. Ver el efecto del flujo de trabajo
 
-### How to start this course
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=hello-github-actions&owner=%40me&name=skills-hello-github-actions&description=My+clone+repository&visibility=public)
+### Cómo comenzar este curso siendo stemdoer
 
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+Simplemente espera, esta vista cambiará. 
+Haz click en la pestaña ``Actions`` y observa algo se está ejecutando.
+
+### No eres stemdoer
+
+Adelante haz click en el botón.
+
+
+[![comenzar-curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_name=hello-github-actions-custom&template_owner=classroom-sebasnaa&description=Mi+repositorio+clonado&visibility=public)
+
+
+
+1. Haz clic derecho en **Comenzar curso** y abre el enlace en una nueva pestaña.
+2. En la nueva pestaña, la mayoría de los campos se completarán automáticamente para ti.
+   - Para el propietario, elige tu cuenta personal o una organización para alojar el repositorio.
+   - Recomendamos crear un repositorio público, ya que los repositorios privados usarán [minutos de Actions](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   - Desplázate hacia abajo y haz clic en el botón **Crear repositorio** en la parte inferior del formulario.
+3. Después de que se cree tu nuevo repositorio, espera unos 20 segundos, luego actualiza la página. Sigue las instrucciones paso a paso en el README del nuevo repositorio.
 
 <footer>
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/hello-github-actions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Obtén ayuda: [Publica en nuestro foro de discusión](https://github.com/orgs/skills/discussions/categories/hello-github-actions) &bull; [Revisa la página de estado de GitHub](https://www.githubstatus.com/)
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2023 GitHub &bull; [Código de conducta](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [Licencia MIT](https://gh.io/mit)
 
 </footer>

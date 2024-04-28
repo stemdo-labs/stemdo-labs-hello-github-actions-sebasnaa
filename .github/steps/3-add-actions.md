@@ -1,19 +1,22 @@
-## Step 3: Add a step to your workflow file
+## Paso 3: Agregar un paso a tu archivo de flujo de trabajo
 
-_Nice work adding a job to your workflow! :dancer:_
+_¡Buen trabajo agregando un trabajo a tu flujo de trabajo! :dancer:_
 
-Workflows have jobs, and jobs have steps. So now we'll add a step to your workflow.
+Los flujos de trabajo tienen trabajos, y los trabajos tienen pasos. Entonces, ahora agregaremos un paso a tu flujo de trabajo.
 
-**What are _steps_?**: Actions steps run - in the order they are specified, from the top down - when a workflow job is processed. Each step must pass for the next step to run.
+**¿Qué son los _pasos_?**: Los pasos de acciones se ejecutan, en el orden especificado, de arriba hacia abajo, cuando se procesa un trabajo de flujo de trabajo. Cada paso debe pasar para que se ejecute el siguiente paso.
 
-Each step consists of either a shell script that's executed, or a reference to an action that's run. When we talk about an action (with a lowercase "a") in this context, we mean a reusable unit of code. You can find out about actions in "[Finding and customizing actions](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions)," but for now we'll use a shell script in our workflow step.
+Cada paso consta de un script de shell que se ejecuta o una referencia a una acción que se ejecuta. Cuando hablamos de una acción (con una "a" minúscula) en este contexto, nos referimos a una unidad de código reutilizable. Puedes obtener más información sobre las acciones en "[Encontrar y personalizar acciones](https://docs.github.com/en/actions/learn-github-actions/finding-and-customizing-actions)", pero por ahora usaremos un script de shell en nuestro paso de flujo de trabajo.
 
-Update your workflow to make it post a comment on new pull requests. It will do this using a [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) script and [GitHub CLI](https://cli.github.com/).
+Actualiza tu flujo de trabajo para que publique un comentario en nuevas pull requests. Esto se hará utilizando un script [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) y [GitHub CLI](https://cli.github.com/).
 
-### :keyboard: Activity: Add a step to your workflow file
 
-1. Still working on the `welcome-workflow` branch, open your `welcome.yml` file.
-1. Update the contents of the file to:
+
+### :keyboard: Actividad: Agregar un paso a tu archivo de flujo de trabajo
+
+1. Aún trabajando en la rama `welcome-workflow`, abre tu archivo `welcome.yml`.
+2. Actualiza el contenido del archivo a:
+
 
    ```yaml copy
    name: Post welcome comment
@@ -32,9 +35,10 @@ Update your workflow to make it post a comment on new pull requests. It will do 
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
              PR_URL: ${{ github.event.pull_request.html_url }}
    ```
-
-   **Note:** The step you've added uses GitHub CLI (`gh`) to add a comment when a pull request is opened. To allow GitHub CLI to post a comment, we set the `GITHUB_TOKEN` environment variable to the value of the `GITHUB_TOKEN` secret, which is an installation access token, created when the workflow runs. For more information, see "[Automatic token authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)." We set the `PR_URL` environment variable to the URL of the newly created pull request, and we use this in the `gh` command.
    
-1. Click **Commit changes** in the top right of the workflow editor.
-1. Type your commit message and commit your changes directly to your branch.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace this content with instructions for the next step.
+    **Nota:** El paso que has agregado utiliza GitHub CLI (`gh`) para agregar un comentario cuando se abre una solicitud de extracción. Para permitir que GitHub CLI publique un comentario, establecemos la variable de entorno `GITHUB_TOKEN` con el valor del secreto `GITHUB_TOKEN`, que es un token de acceso de instalación creado cuando se ejecuta el flujo de trabajo. Para obtener más información, consulta "[Autenticación automática de token](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)". Establecemos la variable de entorno `PR_URL` con la URL de la nueva solicitud de extracción creada, y la usamos en el comando `gh`.
+
+
+1. Haz clic en **Commit changes** en la parte superior derecha del editor de flujo de trabajo.
+2. Escribe tu mensaje de confirmación y confirma tus cambios directamente en tu rama.
+3. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.

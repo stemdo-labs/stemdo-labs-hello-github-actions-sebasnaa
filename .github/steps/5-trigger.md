@@ -1,18 +1,18 @@
-## Step 5: Trigger the workflow
+## Paso 5: Activar el flujo de trabajo
 
-_You've now added a fully functioning workflow to your repository! :smile:_
+_¡Ahora has agregado un flujo de trabajo completamente funcional a tu repositorio! :smile:_
 
-The shell script in the workflow will run whenever a new pull request is opened.
+El script de shell en el flujo de trabajo se ejecutará cada vez que se abra una nueva pull request.
 
-**Seeing your _action_ in action**: The status of each workflow run that's triggered is shown in the pull request before it's merged: look for **All checks have passed** when you try out the steps below. You can also see a list of all the workflows that are running, or have finished running, in the **Actions** tab of your repository. From there, you can click on each workflow run to view more details and access log files.
+**Ver tu _acción_ en acción**: El estado de cada ejecución de flujo de trabajo que se activa se muestra en la pull request antes de fusionarse: busca **Todos los controles han pasado** cuando pruebes los pasos a continuación. También puedes ver una lista de todos los flujos de trabajo que se están ejecutando o que han terminado de ejecutarse en la pestaña **Actions** de tu repositorio. Desde allí, puedes hacer clic en cada ejecución de flujo de trabajo para ver más detalles y acceder a los archivos de registro.
 
-![A screenshot of the Actions tab showing a list of workflow runs.](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
+![Una captura de pantalla de la pestaña Actions mostrando una lista de ejecuciones de flujo de trabajo.](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
 
-### :keyboard: Activity: Trigger the workflow
+### :keyboard: Actividad: Activar el flujo de trabajo
 
-1. Make a new branch named `test-workflow`.
-1. Make a change, such as adding an emoji to your README.md file, and commit the change directly to your new branch.
-1. In the **Pull requests** tab, create a pull request that will merge `test-workflow` into `main`.
-1. Watch the workflow running in the checks section of the pull request.
-1. Notice the comment that the workflow adds to the pull request.
-1. Wait about 20 seconds, then refresh this page (the one you're following instructions from). Another workflow will run and will replace this content with instructions for the next step.
+1. Crea una nueva rama llamada `test-workflow`.
+2. Realiza un cambio, como agregar un emoji a tu archivo README.md, y confirma el cambio directamente en tu nueva rama.
+3. En la pestaña **Pull requests**, crea una pull request que fusionará `test-workflow` en `stemdo`.
+4. Observa el flujo de trabajo en ejecución en la sección de comprobaciones de la pull request.
+5. Observa el comentario que el flujo de trabajo agrega a la pull request.
+6. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.

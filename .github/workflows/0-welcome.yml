@@ -3,13 +3,13 @@ name: Step 0, Welcome
 # This step triggers after the learner creates a new repository from the template.
 # This workflow updates from step 0 to step 1.
 
-# This will run every time we create push a commit to `main`.
+# This will run every time we create push a commit to `stemdo`.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - stemdo
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 jobs:
-  # Get the current step to only run the main job when the learner is on the same step.
+  # Get the current step to only run the stemdo job when the learner is on the same step.
   get_current_step:
     name: Check current step number
     runs-on: ubuntu-latest
@@ -76,8 +76,8 @@ jobs:
           echo "Push"
           git push --set-upstream origin $BRANCH
 
-          echo "Restore main"
-          git checkout main
+          echo "Restore stemdo"
+          git checkout stemdo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -89,3 +89,4 @@ jobs:
           from_step: 0
           to_step: 1
           branch_name: welcome-workflow
+          base_branch_name: stemdo

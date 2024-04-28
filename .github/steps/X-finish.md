@@ -1,21 +1,23 @@
-## Finish
+## Fin
 
-_Congratulations friend, you've completed this course!_
+_¡Felicidades amigo, has completado este curso!_
 
-<img src=https://octodex.github.com/images/jetpacktocat.png alt="Mona the Octocat wearing a jetpack and smiling." width=300 align=right>
+<img src=https://octodex.github.com/images/jetpacktocat.png alt="Mona the Octocat con una mochila propulsora y sonriendo." width=300 align=right>
 
-Here's a recap of all the tasks you've accomplished in your repository:
+Aquí tienes un resumen de todas las tareas que has realizado en tu repositorio:
 
-- You've created your first GitHub Actions workflow file.
-- You learned where to make your workflow file.
-- You defined an event trigger, a job, and a step for your workflow.
-- You're ready to automate anything you can dream of.
+- Has creado tu primer archivo de flujo de trabajo de GitHub Actions.
+- Aprendiste dónde hacer tu archivo de flujo de trabajo.
+- Definiste un desencadenador de eventos, un trabajo y un paso para tu flujo de trabajo.
+- Estás listo para automatizar cualquier cosa que puedas imaginar.
 
-### What's next?
+### ¿Qué sigue?
 
-- Learn more about GitHub Actions by reading "[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)"
-- Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions)
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/hello-github-actions)
-- [Take another course on GitHub Actions](https://skills.github.com/#automate-workflows-with-github-actions)
-- Learn more about GitHub by reading the "[Get started](https://docs.github.com/get-started)" docs
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore)
+
+- Aprende más sobre GitHub Actions leyendo "[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)"
+- Utiliza acciones creadas por otros  [awesome-actions](https://github.com/sdras/awesome-actions)
+- Nos encantaría saber qué opinas de este curso [en nuestro foro de discusión](https://github.com/orgs/skills/discussions/categories/hello-github-actions)
+- [Realiza otro curso sobre GitHub Actions](https://skills.github.com/#automate-workflows-with-github-actions)
+- Aprende más sobre GitHub leyendo la documentación "[Get started](https://docs.github.com/get-started)"
+- Para encontrar proyectos en los que contribuir, visita [GitHub Explore](https://github.com/explore)
+
