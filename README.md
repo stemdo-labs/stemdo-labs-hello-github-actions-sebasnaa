@@ -35,7 +35,7 @@ Haz click en la pestaña ``Actions`` y observa algo se está ejecutando.
 Adelante haz click en el botón.
 
 
-[![comenzar-curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_name=hello-github-actions-custom&template_owner=classroom-sebasnaa&description=Mi+repositorio+clonado&visibility=public)
+[![comenzar-curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_name=hello-github-actions&template_owner=stemdo-labs&description=Creando+acciones+y+usandolas+en+un+workflow&visibility=public)
 
 
 
