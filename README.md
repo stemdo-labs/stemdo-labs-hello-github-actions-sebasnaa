@@ -6,45 +6,51 @@ _Crea y ejecuta un flujo de trabajo de GitHub Actions._
 
 </header>
 
-## Bienvenido
+## Paso 1: Crear un archivo de flujo de trabajo
 
-La automatización es clave para optimizar tus procesos de trabajo, y [GitHub Actions](https://docs.github.com/actions) es la mejor manera de potenciar tu flujo de trabajo.
+_Bienvenido a "Hola GitHub Actions"! :wave:_
 
-- **¿Para quién es esto?**: Desarrolladores, ingenieros DevOps, estudiantes, gerentes, equipos, usuarios de GitHub.
-- **Lo que aprenderás**: Cómo crear archivos de flujo de trabajo, activar flujos de trabajo y encontrar registros de flujo de trabajo.
-- **Qué construirás**: Un flujo de trabajo de Actions que verificará las referencias de códigos cortos de emoji en archivos Markdown.
-- **Requisitos previos**: En este curso trabajarás con problemas y solicitudes de extracción, así como editar archivos. Recomendamos que primero hagas el curso de [Introducción a GitHub](https://github.com/skills/introduction-to-github).
-- **Duración**: Este curso se puede completar en menos de dos horas.
-
-En este curso, aprenderás:
-
-1. Crear un flujo de trabajo
-2. Agregar un trabajo
-3. Agregar un paso de ejecución
-4. Fusionar tu solicitud de extracción
-5. Ver el efecto del flujo de trabajo
+**¿Qué es _GitHub Actions_?**: GitHub Actions es una forma flexible de automatizar casi todos los aspectos del flujo de trabajo de software de tu equipo. Puedes automatizar pruebas, implementaciones continuas, revisar código, gestionar problemas y solicitudes de extracción, y mucho más. La mejor parte es que estos flujos de trabajo se almacenan como código en tu repositorio y se pueden compartir y reutilizar fácilmente entre equipos. Para obtener más información, consulta estos recursos:
 
 
-### Cómo comenzar este curso siendo stemdoer
+- La página de Actions de GitHub Actions, ver [GitHub Actions](https://github.com/features/actions).
+- La documentación de usuario de "GitHub Actions", ver [GitHub Actions](https://docs.github.com/actions).
 
-Simplemente espera, esta vista cambiará. 
-Haz click en la pestaña ``Actions`` y observa algo se está ejecutando.
-
-### No eres stemdoer
-
-Adelante haz click en el botón.
+**¿Qué es un _flujo de trabajo_?**: Un flujo de trabajo es un proceso automatizado configurable que ejecutará uno o más trabajos. Los flujos de trabajo se definen en archivos especiales en el directorio `.github/workflows` y se ejecutan en función del evento que elijas. Para este ejercicio, utilizaremos un evento `pull_request`.
 
 
-[![comenzar-curso](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_name=hello-github-actions&template_owner=stemdo-labs&description=Creando+acciones+y+usandolas+en+un+workflow&visibility=public)
+- Para obtener más información sobre flujos de trabajo, trabajos y eventos, consulta "[Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)".
+- Si deseas aprender más sobre el evento pull_request antes de usarlo,, consulta "[pull_request](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#pull_request)".
+
+Para comenzar, ejecutamos un flujo de trabajo de Actions en tu nuevo repositorio que, entre otras cosas, creó una rama para que trabajes en ella, llamada ``welcome-workflow``.
 
 
+###  :keyboard: Actividad: Crear un archivo de flujo de trabajo
+1. Abre una nueva pestaña del navegador y navega hasta este mismo repositorio. Luego, trabaja en los pasos en tu segunda pestaña mientras lees las instrucciones en esta pestaña.
+1. Crea una solicitud de extracción. Esto contendrá todos los cambios que realizarás en esta parte del curso.
 
-1. Haz clic derecho en **Comenzar curso** y abre el enlace en una nueva pestaña.
-2. En la nueva pestaña, la mayoría de los campos se completarán automáticamente para ti.
-   - Para el propietario, elige tu cuenta personal o una organización para alojar el repositorio.
-   - Recomendamos crear un repositorio público, ya que los repositorios privados usarán [minutos de Actions](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Desplázate hacia abajo y haz clic en el botón **Crear repositorio** en la parte inferior del formulario.
-3. Después de que se cree tu nuevo repositorio, espera unos 20 segundos, luego actualiza la página. Sigue las instrucciones paso a paso en el README del nuevo repositorio.
+    Haz clic en la pestaña **Pull Requests**, luego en **New pull request**, establece `base: stemdo` y `compare:welcome-workflow`, haz clic en **Create pull request**, luego haz clic en **Create pull request** nuevamente.
+
+
+1. Navega a la pestaña **Code**.
+2. Desde el menú desplegable de la rama **stemdo**, haz clic en la rama **welcome-workflow**.
+3. Navega hasta la carpeta `.github/workflows/`, luego selecciona **Add file** y haz clic en **Create new file**.
+4. En el campo **Name your file**, ingresa `welcome.yml`.
+5. Agrega el siguiente contenido al archivo `welcome.yml`:
+
+
+   ```yaml copy
+   name: Post welcome comment
+   on:
+     pull_request:
+       types: [opened]
+   permissions:
+     pull-requests: write
+   ```
+
+1. Para confirmar tus cambios, haz clic en **Confirmar cambios**.
+2. Escribe un mensaje de confirmación, selecciona **Confirmar directamente en la rama welcome-workflow** y haz clic en **Confirmar cambios**.
+3. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Un flujo de trabajo de Actions separado en el repositorio (no el flujo de trabajo que creaste) se ejecutará y reemplazará automáticamente el contenido de este archivo README con instrucciones para el próximo paso.
 
 <footer>
 
