@@ -1,6 +1,6 @@
 <header>
 
-# Hello GitHub Actions Sebasnaa
+# Hello GitHub Actions
 
 _Crea y ejecuta un flujo de trabajo de GitHub Actions._
 
