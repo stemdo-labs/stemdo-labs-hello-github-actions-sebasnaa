@@ -6,19 +6,24 @@ _Crea y ejecuta un flujo de trabajo de GitHub Actions._
 
 </header>
 
-## Paso 4: Fusiona tu archivo de flujo de trabajo
+## Paso 5: Activar el flujo de trabajo
 
-_¡Ahora puedes escribir y ejecutar un flujo de trabajo de Actions! :sparkles:_
+_¡Ahora has agregado un flujo de trabajo completamente funcional a tu repositorio! :smile:_
 
-Fusiona tus cambios para que la acción sea parte de la rama `stemdo`.
+El script de shell en el flujo de trabajo se ejecutará cada vez que se abra una nueva pull request.
 
-### :keyboard: Actividad: Fusiona tu archivo de flujo de trabajo
+**Ver tu _acción_ en acción**: El estado de cada ejecución de flujo de trabajo que se activa se muestra en la pull request antes de fusionarse: busca **Todos los controles han pasado** cuando pruebes los pasos a continuación. También puedes ver una lista de todos los flujos de trabajo que se están ejecutando o que han terminado de ejecutarse en la pestaña **Actions** de tu repositorio. Desde allí, puedes hacer clic en cada ejecución de flujo de trabajo para ver más detalles y acceder a los archivos de registro.
 
-1. En tu repositorio, haz clic en la pestaña **Pull requests**.
-2. Haz clic en la solicitud de extracción que creaste en el paso 1.
-3. Haz clic en **Merge pull request**, luego haz clic en **Confirm merge**.
-4. Opcionalmente, haz clic en **Delete branch** para eliminar tu rama `welcome-workflow`.
-5. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.
+![Una captura de pantalla de la pestaña Actions mostrando una lista de ejecuciones de flujo de trabajo.](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
+
+### :keyboard: Actividad: Activar el flujo de trabajo
+
+1. Crea una nueva rama llamada `test-workflow`.
+2. Realiza un cambio, como agregar un emoji a tu archivo README.md, y confirma el cambio directamente en tu nueva rama.
+3. En la pestaña **Pull requests**, crea una pull request que fusionará `test-workflow` en `stemdo`.
+4. Observa el flujo de trabajo en ejecución en la sección de comprobaciones de la pull request.
+5. Observa el comentario que el flujo de trabajo agrega a la pull request.
+6. Espera unos 20 segundos, luego actualiza esta página (la que estás siguiendo las instrucciones). Otro flujo de trabajo se ejecutará y reemplazará el contenido de este archivo README con instrucciones para el próximo paso.
 
 <footer>
 
